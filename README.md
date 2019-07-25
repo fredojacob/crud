@@ -21,14 +21,7 @@ no se logra ver en index.pug "poster" es una clase de css nada de otro mundo.
                                     td #{movie.rating}                                                       
                                     td
                                         img.poster(src="#{movie.images}" )
-                                    td
-                                        form(method="get" action="/editar/#{movie_id}") 
-                                            input.button.edit(type="submit", value="Editar")
-                            
-                                    td 
-                                         form(method="post" action="/eliminar/#{movie.movie_id}") 
-                                            input.button.delete(type="button", value="Eliminar" onclick="eliminar(this)")
-
+                             
 
 problema #2
 
