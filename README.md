@@ -3,23 +3,7 @@ Problema #1:
 Las Url de cualquier imagen que se quiera subir a mysql sube con exito al momento de leer poder renderisar la imagen en navegador 
 no se logra ver en index.pug "poster" es una clase de css nada de otro mundo.
 
-  table.table
-                            tr
-                                th Id
-                                th Titulo
-                                th anio
-                                th Puntuacion 
-                                th Poster  
-                                th(colspan="2")
-                                    form(method="get" action="/agregar") 
-                                        input.button.add(type="submit", value="Agregar")
-                            each movie in data
-                                tr
-                                    td #{movie.movie_id}
-                                    td #{movie.title}                            
-                                    td #{movie.release_year}                           
-                                    td #{movie.rating}                                                       
-                                    td
+
                                         img.poster(src="#{movie.images}" )
                              
 
